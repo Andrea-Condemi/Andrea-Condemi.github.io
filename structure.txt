@@ -1,4 +1,4 @@
-il-mio-blog-musicale/
+mirrortext/
 ├── _config.yml              # Configurazione principale di Jekyll
 ├── _data/                   # Dati del sito (YAML, JSON, CSV)
 ├── _includes/               # Componenti riutilizzabili (header, footer)
