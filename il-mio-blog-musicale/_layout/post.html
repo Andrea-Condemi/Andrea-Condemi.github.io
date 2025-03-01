@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      {%- if page.date -%}
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%d/%m/%Y" }}
+        </time>
+      {%- endif -%}
+      {% if page.category %}
+        <span class="post-category">• {{ page.category }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.category == "musica" %}
+  <div class="music-metadata">
+    {% if page.artist %}
+    <div class="music-detail">
+      <strong>Artista:</strong> {{ page.artist }}
+    </div>
+    {% endif %}
+    {% if page.album %}
+    <div class="music-detail">
+      <strong>Album:</strong> {{ page.album }}
+    </div>
+    {% endif %}
+    {% if page.year %}
+    <div class="music-detail">
+      <strong>Anno:</strong> {{ page.year }}
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div class="post-navigation">
+    <div class="post-nav-links">
+      {% if page.previous.url %}
+      <a class="prev-link" href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title | escape }}</a>
+      {% endif %}
+      {% if page.next.url %}
+      <a class="next-link" href="{{ page.next.url | relative_url }}">{{ page.next.title | escape }} &rarr;</a>
+      {% endif %}
+    </div>
+  </div>
+</article>
