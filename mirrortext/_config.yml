@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Mirrortext
+title: MirrorText
 email: tua@email.it
 description: >-
   Un blog minimal dedicato all'analisi di brani musicali e saggi personali.
