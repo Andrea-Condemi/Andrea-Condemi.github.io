@@ -22,7 +22,7 @@ title: Mirrortext
 email: tua@email.it
 description: >-
   Un blog minimal dedicato all'analisi di brani musicali e saggi personali.
-baseurl: "/blog" # Sottocartella del tuo sito GitHub Pages
+baseurl: "/mirrortext" # Sottocartella del tuo sito GitHub Pages
 url: "https://andrea-condemi.github.io" # Sostituisci con il tuo username GitHub
 github_username: andrea-condemi
 
